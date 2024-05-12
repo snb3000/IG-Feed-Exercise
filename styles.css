@@ -1,49 +1,54 @@
-body {
-    font-family: Arial, sans-serif;
+body, html {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-family: Arial, sans-serif;
+    background: #fafafa;
 }
 
 header {
-    background-color: #f0f0f0;
-    width: 100%;
-    padding: 10px 20px;
+    background-color: #ffffff;
+    padding: 20px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.feed {
+main.feed {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
-    max-width: 800px;
-    margin-top: 20px;
+    gap: 20px;
+    padding: 20px;
 }
 
 .photo-post {
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background: #ffffff;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 100%; /* Adjust width as necessary, perhaps to a max-width for larger screens */
+    max-width: 600px; /* This sets a maximum width for larger screens */
 }
 
 .photo-post img {
-    max-width: 100%;
+    display: block;
+    width: 100%;
     height: auto;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.photo-post header, .photo-post footer {
+    padding: 10px 15px;
 }
 
 .photo-post h2 {
-    color: #333;
+    margin: 0;
+    font-size: 18px;
+    color: #262626;
 }
 
 .photo-post p {
     font-size: 14px;
-    text-align: center;
+    line-height: 1.5;
+    color: #262626;
 }
