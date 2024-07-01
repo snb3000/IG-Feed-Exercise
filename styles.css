@@ -1,54 +1,49 @@
-body, html {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background: #fafafa;
-}
-
-header {
-    background-color: #ffffff;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-main.feed {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    padding: 20px;
+}
+
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+    margin-top: 20px;
 }
 
 .photo-post {
-    background: #ffffff;
-    border: 1px solid #dbdbdb;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    overflow: hidden;
-    width: 100%; /* Adjust width as necessary, perhaps to a max-width for larger screens */
-    max-width: 600px; /* This sets a maximum width for larger screens */
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .photo-post img {
-    display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    border-bottom: 1px solid #dbdbdb;
-}
-
-.photo-post header, .photo-post footer {
-    padding: 10px 15px;
 }
 
 .photo-post h2 {
-    margin: 0;
-    font-size: 18px;
-    color: #262626;
+    color: #333;
 }
 
 .photo-post p {
     font-size: 14px;
-    line-height: 1.5;
-    color: #262626;
+    text-align: center;
 }
